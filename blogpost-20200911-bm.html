@@ -1,0 +1,26 @@
+<div class="col-md-8 blog-main">
+<h3 class="pb-4 mb-4 font-italic border-bottom">
+			Die neuesten Beiträge
+		</h3>
+<h2 class="blog-post-title">Wieviele Bäume stehen in Rostock?</h2>
+<p class="blog-post-meta">11. September 2020 <a href="https://getbootstrap.com/docs/4.5/examples/blog/#">Mike</a></p>
+<p><em>Die Welt der Open Data bietet faszinierende Fundstücke. So stellt beispielsweise die deutsche Stadt Rostock ein Inventar aller ihrer Bäume auf der Plattform <a href="https://www.europeandataportal.eu/">europeandataportal.eu</a> zum Download bereit. Zu jedem einzelnen Baum erfahren wir, welcher Art und Gattung er angehört, wie hoch er ist, welchen Durchmesser sein Stamm und seine Krone aufweisen. Eine schöne Sache, leider mit kleinen Fehlern.</em></p>
+<hr/>
+<p>Der veröffentlichte <a href="https://www.europeandataportal.eu/data/datasets/38db800d-a64d-4053-8c50-f96a7f51510e?locale=de">Datensatz</a> umfasst die Bäume des Baumkatasters der Hanse- und Universitätsstadt Rostock. Er wird in der Regel alle 3 Tage auf den neuesten Stand gebracht. Mir liegt die Version vom 09.09.2020 03:24 vor. Gemäss diesem Datensatz stehen in Rostock 71'809 Bäume, die sich auf 82 Gattungen und 459 Arten verteilen.</p>
+<h2>Welche Bäume sind beliebt?</h2>
+<p>Aus den Zahlenwerten lassen sich anschauliche Diagramme erstellen, etwa ein Histogramm der Stammumfänge oder ein Streudiagramm, das den Zusammenhang zwischen Stammumfang und Baumhöhe zeigt. Immer wieder eindrücklich ist der Vergleich verschiedener Populationen miteinander. Betrachten wir, wieviele Bäume jeweils einer bestimmten Gattung angehören und sortieren die Zahlen in absteigender Reihenfolge, so erhalten wir ein Bild, das sehr an die klassische Pareto-Verteilung erinnert.</p>
+<p>Aus der Schule kennen wir vielleicht noch den Begriff der "<a href="https://de.wikipedia.org/wiki/Normalverteilung">Normalverteilung</a>". Bei dieser fallen 68% der Ergebnisse einer Messung in einen durch den Mittelwert (Erwartungswert) und die Standardabweichung definierten Bereich, nämlich den Bereich zwischen Mittelwert minus Standardabweichung und Mittelwert plus Standardabweichung (M ± s). Diese Art der Verteilung finden wir häufig bei körperlichen Merkmalen wie Gewicht und Grösse, annähernd auch bei der Lebenserwartung, und per definitionem beim Intelligenzquotienten. Die Pareto-Verteilung hingegen finden wir dort, wo man Beliebtheit oder Bevorzugung misst: Einwohnerzahlen von Städten, Followers auf Social Media, Vermögen pro Kopf oder Klickzahlen von Online-Artikeln. Überall dort wirkt das Prinzip: wer hat, dem wird gegeben.</p>
+<p><img src="images/paretoverteilung.png" width="600"/></p>
+<p>Zur Erinnerung: Die <a href="https://de.wikipedia.org/wiki/Pareto-Verteilung">Pareto-Verteilung</a> wird auch 80-zu-20-Regel genannt, weil sich 80% des Gemessenen auf 20% der zu messenden Gruppierungen verteilt oder beispielsweise 80% des Zeitaufwandes in einem Callcenter auf 20% der Anrufe. Bei den Bäumen von Rostock ist die Verteilung noch steiler als bei der klassischen Pareto-Verteilung: Die 12 am häufigsten vorkommenden Baumgattungen machen 81% des gesamten Baumbestandes, aber nur 15% der verschiedenen Gattungen aus. Man kann es auch so ausdrücken: Wenn ich diese 12 Baumgattungen auf Anhieb erkenne, beträgt die Wahrscheinlichkeit, dass ich auf die Frage "Und was für ein Baum ist das?" richtig antworte, knapp über 80 Prozent.</p>
+<h2>Daten nicht unbesehen übernehmen!</h2>
+<p>Etwas anderes lässt sich an dem hier betrachteten Datensatz auch deutlich erkennen: Daten sollten nie zum Nennwert genommen, sondern immer plausibilisiert werden. Wenn ich mir die Verteilung der Baumhöhen anschaue, stelle ich fest, dass 59 Bäume zwischen 40 und 60 Meter, 19 Bäume zwischen 60 und 80 Meter und 25 Bäume höher als 80 Meter sind. Angesichts der Tatsache, dass es in Europa wahrscheinlich keinen Baum gibt, der den 73 Meter hohen <em>Eucalyptus diversicolor</em> mit Namen Karri Knight im Valle de Canas, Portugal überragt, deuten auch die Prozentzahlen der Messwerte auf fehlerhafte Daten hin: in die Kategorie '40 Meter oder grösser' fallen gerade einmal 0.15% der Messwerte. Für eine saubere Auswertung sollte man diese Werte löschen.</p>
+<h2>Weiterführende Links</h2>
+<ul>
+<li><a href="https://www.monumentaltrees.com/de/rekorde/europa/">Monumentale Bäume in Europa</a></li>
+<li><a href="https://www.europeandataportal.eu/data/datasets/38db800d-a64d-4053-8c50-f96a7f51510e?locale=de">Baumkataster der Hanse- und Universitätsstadt Rostock</a> auf dem Europäischen Datenportal</li>
+<li><a href="https://rathaus.rostock.de/de/rathaus/rostock_in_zahlen/249278">Rostock in Zahlen</a></li>
+<li><a href="https://rathaus.rostock.de/sixcms/media.php/rostock_01.a.4984.de/datei/Baumbericht%202019.pdf">Baumbericht der Stadt Rostock für das Jahr 2019</a> (PDF)</li>
+<li>Eine Publikation der ETH Zürich zum Thema <a href="https://ethz.ch/content/dam/ethz/special-interest/usys/ites/waldmgmt-waldbau-dam/documents/masterarbeiten/noldin_2015_schaetzen_indikatoren_bestandesstruktur_gebrigsnadelwald_lidar.pdf">Schätzen von Indikatoren hinsichtlich der Bestandesstruktur von Gebirgsnadelwäldern auf der Basis von LiDAR-Daten</a> (PDF)</li>
+</ul>
+<p></p><p></p>
+</div>

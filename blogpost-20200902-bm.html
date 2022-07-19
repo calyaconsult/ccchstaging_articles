@@ -1,0 +1,37 @@
+<div class="col-md-8 blog-main">
+<h3 class="pb-4 mb-4 font-italic border-bottom">
+			Die neuesten Beiträge
+		</h3>
+<h2 class="blog-post-title">Mit einem Dashboard behalten Sie Ihre Zahlen im Überblick</h2>
+<p class="blog-post-meta">2. September 2020 <a href="https://getbootstrap.com/docs/4.5/examples/blog/#">Mike</a></p>
+<p><em>Es gibt kein Unternehmen, bei dem nicht täglich Daten anfallen. Um die wichtigsten davon im Auge zu behalten, setzt man schon lange auf so genannte "Dashboards", manchmal auch "Cockpit" genannt. Durch sinnvolle Auswahl und Anordnung der Kennzahlen ist im Idealfall auf einen Blick klar, was Sache ist</em></p>
+<hr/>
+<h2>Das absolute Minimum: eine Tabelle</h2>
+<p>Gibt es nur wenige unternehmenskritische Kennzahlen, dann reicht eine schlichte Tabelle, die den Ist-Zustand der aktuellen Periode (Tag, Woche, Monat, Quartal oder Jahr) widergibt.</p>
+<div class="tbldiv"><table><thead><tr><th> </th><th>Seitenabrufe</th><th>Besuche</th><th>Besucher pro Tag</th></tr></thead><tbody>
+<tr class="datarow"><td class="rowname">Gestern</td><td>12,684</td><td>2,995</td><td>1,575</td></tr>
+<tr class="datarow"><td class="rowname">Vor 1 Woche</td><td>12,731</td><td>2,859</td><td>1,415</td></tr>
+</tbody></table><br/></div>
+<p>Solche Tabellen werden bevorzugt als Excel Sheets angelegt, weil sich damit rechnen lässt und auf diese Weise Differenzen oder Trends graphisch hervorgehoben werden können.</p>
+<h2>Etwas komplexer: Das Wichtigste zusammenfassen, die Details auslagern</h2>
+<p>Während der letzten Jahre habe ich für ein Unternehmen täglich Zahlen erhoben, die nach Monaten gegliedert jeweils in eine Tabelle einzutragen waren. Jeden Monat gab es eine neue Tabelle und ein zugehöriges Diagramm, so dass der Verlauf von Anfang bis Ende des Monats zu ersehen war.<br/>
+		Die Abteilungsleitung wollte jedoch einen täglichen Statusbericht, der auf drei Fragen Antwort gab: Wie waren die Zahlen gestern? Welches Ergebnis ist auf Ende Monat zu erwarten? Und wie verhält sich dieses Ergebnis zum Vormonat beziehungsweise Vorjahr?</p>
+<p>Als Lösung für diese Aufgabe hat sich Google Sheets bewährt. Jeder Monat bekommt eine eigene Tabelle und in einer separaten Tabelle werden die verlangten Zusammenfassungen automatisch angezeigt.</p>
+<iframe height="240" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTxkZvNfc73Ofl2QLR4HovnjvFjyK4PnUU3onQhI11jZ75xbAMNLi4QlFTzK-02bdkUKE4baywNrF0J/pubhtml?widget=true&amp;headers=false" width="100%"></iframe>
+<p>Link zu Google Sheets: <a href="https://docs.google.com/spreadsheets/d/1LZ1PxfGE3cYL1ZrMDaevUT6JjOw1GTmlckQ3cUGTVQo/edit?usp=sharing">Showcase: Traffic Dashboard (GS)</a></p>
+<p>Selbe Daten, datenbankbasiert auf Google Data Studio: <a href="https://datastudio.google.com/u/1/reporting/ea8a6758-14e3-4e67-8d32-3108c24ab71c/page/shHeB">Showcase: Traffic Dashboardn (GDS)</a></p>
+<h2>Ein Dashboard für unterwegs</h2>
+<p>Als Nachteil der gewählten Lösung erwies sich, dass sich Google Sheets zwar auf dem Mobiltelefon aufrufen lässt, dass aber die Lesbarkeit der Tabelle nicht besonders gut ist. Wir beschlossen daher, eine sehr simple mobile Applikation zu entwickeln, die die Daten aus der Tabelle herauszieht, umformatiert und in einer für Mobilgeräte optimierten Form darstellt. Einen Screenshot sehen Sie unten.</p>
+<div style="border:1px solid #888;width:380px;margin-bottom:.85em"><img height="682" src="images/mobile-dashboard.png" width="324"/></div>
+<h2>Komplexere Dashboards mit Google Data Studio</h2>
+<p>Daten, die man in Tabellen erfasst hat, lassen sich in Google Datastudio einfach als Diagramme darstellen. Im untenstehenden Beispiel wollte ein Vorgesetzter den Überblick haben, welches Mitglied seines Teams welche Reisespesen abgerechnet hatte, und zur Optimierung der Hotelkosten wollte er wissen, wie sich die gesamten Kosten auf die einzelnen Städte, die sein Team besuchte, verteilten.</p>
+<p><img height="452" src="images/reisebudget.png" width="797"/></p>
+<h2>Es gibt viele Tools, mit denen man Dashboards erstellen kann</h2>
+<p>Der "Mercedes" unter den Tools ist zweifellos <a href="https://tableau.com">Tableau</a>. Mit dieser Software lassen sich hochkomplexe, dynamische Dashboards erstellen, an die Datenquellen jeglicher Art angebunden werden können. Für KMU ist Tableau aber wahrscheinlich eine Nummer zu gross, sowohl was den Aufwand betrifft, den man in das Erlernen seiner Benutzung investieren muss als auch die Lizenzkosten, die anfallen.</p>
+<p>Microsoft bietet mit <a href="https://powerbi.microsoft.com/">Power BI</a> ein vergleichbares, wenn auch nicht so mächtiges Produkt zu einem sehr günstigen Preis an, doch für viele kleine Unternehmen ist auch das noch eine Ausgabe, die man sich sehr gut überlegen muss.</p>
+<p>Googles <a href="https://datastudio.google.com/">Data Studio</a> ist kostenlos und verlangt als Voraussetzung nur ein Google-Konto. Seine Stärke liegt vor allem darin, dass sich andere Google-Produkte wie Google Shhets, Google Cloud SQL, Google BigQuery, Google Ads und vor allem Google Analytics mit wenigen Mausklicks einbinden lassen.<br/>Den produktiven Umgang mit Data Studio zu erlernen, ist nicht ganz einfach und braucht einige Zeit. Eher enttäuschend ist die Langsamkeit, mit der Dashboards aktualisiert werden, wenn sie auf grössere Datenmengen zugreifen müssen.</p>
+<h2>Wie kommt man nun zu einem eigenen Dashboard?</h2>
+<p>Der erste Schritt ist immer: Herausfinden, welche Daten so wichtig sind, dass man sie täglich, wöchentlich oder monatlich verfolgen muss. Ausgehend davon kann man sich eine Skizze machen, wie die Daten dargestellt werden sollen.</p>
+<p>Abhängig davon, wieviele Kennzahlen auf das Dashboard sollen, wie komplex die Berechnungen dahinter sind und welche besonderen Wünsche man bei der Darstellung hat, kann man im simpelsten Fall eine Excel-Tabelle selbst erstellen oder aber, im Fall aufwendigen Darstellungen mit vielen Daten, einen Spezialisten mit der Erstellung beauftragen.</p>
+<p>Gerne offerieren wir Ihnen eine gratis Erstberatung und einen konkreten Vorschlag, wie Ihr Dashboard aussehen könnte. Wenn Sie sich vor dem 30.9.2020 melden, nehmen Sie an der Verlosung einer einmaligen fixfertigen Umsetzung Ihres Dashboards teil.</p>
+</div>
